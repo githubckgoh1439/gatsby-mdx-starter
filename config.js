@@ -49,7 +49,7 @@ const config = {
 		"title": "Maxonrow",
 		"description": "Documentation built with mdx.",
 		"ogImage": null,
-		"docsLocation": "https://github.com/githubckgoh1439/gatsby-mdx-starter/tree/master/content"
+		"docsLocation": "https://github.com/githubckgoh1439/gatsby-mdx-starter/tree/dev-01/content"
 		//"favicon": ""
 	},
 	"pwa": {
