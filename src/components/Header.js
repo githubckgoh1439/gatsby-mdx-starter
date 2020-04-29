@@ -112,23 +112,6 @@ const Header = ({location}) => (
                     );
                   }
                 })}
-                {helpUrl !== '' ?
-                  (<li><a href={helpUrl}><img src={help} alt={'Help icon'}/></a></li>) : null
-                }
-                {(tweetText !== '' || githubUrl !== '') ?
-                  (<li className="divider hiddenMobile"></li>): null
-                }
-                {tweetText !== '' ?
-                  (<li>
-                    <a href={'https://twitter.com/intent/tweet?&text=' + tweetText} target="_blank" rel="noopener">
-                      <img className={'shareIcon'} src={twitter} alt={'Twitter'} />
-                    </a>
-                   </li>) : null
-                }
-                {githubUrl !== '' ?
-                  (<li className={'githubBtn'}>
-                    <GitHubButton href={githubUrl} data-show-count="true" aria-label="Star on GitHub">Star</GitHubButton>
-                  </li>) : null}
               </ul>
             </div>
           </nav>

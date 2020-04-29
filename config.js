@@ -58,8 +58,8 @@ const config = {
 			"name": "Maxonrow",
 			"short_name": "Maxonrow",
 			"start_url": "/",
-			"background_color": "#6b37bf",
-			"theme_color": "#6b37bf",
+			"background_color": "#000056",
+			"theme_color": "#000056",
 			"display": "standalone",
 			"crossOrigin": "use-credentials",
 			icons: [

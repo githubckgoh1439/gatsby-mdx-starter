@@ -69,13 +69,13 @@ The role of the handler is to define what action(s) needs to be taken when this 
 
 In the file (./x/token/nonfungible/handler.go) start with the following code:
 
-![Image-1](pic/MintNonFungibleItem_01.png)
+![Image-1](pic_nonfungible/MintNonFungibleItem_01.png)
 
 
 NewHandler is essentially a sub-router that directs messages coming into this module to the proper handler.
 Now, you need to define the actual logic for handling the MsgTypeCreateNonFungibleToken message in handleMsgCreateNonFungibleToken:
 
-![Image-2](pic/CreateNonFungibleToken_02.png)
+![Image-2](pic_nonfungible/CreateNonFungibleToken_02.png)
 
 
 In this function, requirements need to be met before emitted by the network.  
@@ -88,7 +88,7 @@ In this function, requirements need to be met before emitted by the network.
 #### Events
 This tutorial describes how to create maxonrow events for scanner on this after emitted by a network.
 
-![Image-1](pic/CreateNonFungibleToken_03.png)  
+![Image-1](pic_nonfungible/CreateNonFungibleToken_03.png)  
 
 
 #### Usage
@@ -226,14 +226,14 @@ The role of the handler is to define what action(s) needs to be taken when this 
 
 In the file (./x/token/nonfungible/handler.go) start with the following code:
 
-![Image-1](pic/MintNonFungibleItem_01.png)
+![Image-1](pic_nonfungible/MintNonFungibleItem_01.png)
 
 
 NewHandler is essentially a sub-router that directs messages coming into this module to the proper handler.
 
 First, you define the actual logic for handling the MsgTypeSetNonFungibleTokenStatus-ApproveToken message in handleMsgSetNonFungibleTokenStatus:
 
-![Image-2](pic/SetNonFungibleTokenStatus_07.png)
+![Image-2](pic_nonfungible/SetNonFungibleTokenStatus_07.png)
 
 
 In this function, requirements need to be met before emitted by the network.  
@@ -246,7 +246,7 @@ In this function, requirements need to be met before emitted by the network.
 
 Second, you define the actual logic for handling the MsgTypeSetNonFungibleTokenStatus-RejectToken message in handleMsgSetNonFungibleTokenStatus:
 
-![Image-2](pic/SetNonFungibleTokenStatus_08.png)
+![Image-2](pic_nonfungible/SetNonFungibleTokenStatus_08.png)
 
 
 In this function, requirements need to be met before emitted by the network.  
@@ -259,7 +259,7 @@ In this function, requirements need to be met before emitted by the network.
 
 Thirth, you define the actual logic for handling the MsgTypeSetNonFungibleTokenStatus-FreezeToken message in handleMsgSetNonFungibleTokenStatus:
 
-![Image-2](pic/SetNonFungibleTokenStatus_09.png)
+![Image-2](pic_nonfungible/SetNonFungibleTokenStatus_09.png)
 
 
 In this function, requirements need to be met before emitted by the network.  
@@ -272,7 +272,7 @@ In this function, requirements need to be met before emitted by the network.
 
 Next, you define the actual logic for handling the MsgTypeSetNonFungibleTokenStatus-UnfreezeToken message in handleMsgSetNonFungibleTokenStatus:
 
-![Image-2](pic/SetNonFungibleTokenStatus_10.png)
+![Image-2](pic_nonfungible/SetNonFungibleTokenStatus_10.png)
 
 
 In this function, requirements need to be met before emitted by the network.  
@@ -284,7 +284,7 @@ In this function, requirements need to be met before emitted by the network.
 
 Next, you define the actual logic for handling the MsgTypeSetNonFungibleTokenStatus-ApproveTransferTokenOwnership message in handleMsgSetNonFungibleTokenStatus:
 
-![Image-2](pic/SetNonFungibleTokenStatus_11.png)
+![Image-2](pic_nonfungible/SetNonFungibleTokenStatus_11.png)
 
 
 In this function, requirements need to be met before emitted by the network.  
@@ -296,7 +296,7 @@ In this function, requirements need to be met before emitted by the network.
 
 Last, you define the actual logic for handling the MsgTypeSetNonFungibleTokenStatus-RejectTransferTokenOwnership message in handleMsgSetNonFungibleTokenStatus:
 
-![Image-2](pic/SetNonFungibleTokenStatus_12.png)
+![Image-2](pic_nonfungible/SetNonFungibleTokenStatus_12.png)
 
 
 In this function, requirements need to be met before emitted by the network.  
@@ -311,7 +311,7 @@ In this function, requirements need to be met before emitted by the network.
 #### 1.
 This tutorial describes how to create maxonrow events for scanner base on approve token after emitted by a network.
 
-![Image-1](pic/SetNonFungibleTokenStatus_01.png)  
+![Image-1](pic_nonfungible/SetNonFungibleTokenStatus_01.png)  
 
 
 #### Usage
@@ -330,7 +330,7 @@ This MakeMxwEvents create maxonrow events, by accepting :
 #### 2.
 This tutorial describes how to create maxonrow events for scanner base on reject token after emitted by a network.
 
-![Image-2](pic/SetNonFungibleTokenStatus_02.png)  
+![Image-2](pic_nonfungible/SetNonFungibleTokenStatus_02.png)  
 
 #### Usage
 This MakeMxwEvents create maxonrow events, by accepting :
@@ -348,7 +348,7 @@ This MakeMxwEvents create maxonrow events, by accepting :
 #### 3.
 This tutorial describes how to create maxonrow events for scanner base on freeze token after emitted by a network.
 
-![Image-3](pic/SetNonFungibleTokenStatus_03.png)  
+![Image-3](pic_nonfungible/SetNonFungibleTokenStatus_03.png)  
 
 
 #### Usage
@@ -367,7 +367,7 @@ This MakeMxwEvents create maxonrow events, by accepting :
 #### 4.
 This tutorial describes how to create maxonrow events for scanner base on unfreeze token after emitted by a network.
 
-![Image-4](pic/SetNonFungibleTokenStatus_04.png)  
+![Image-4](pic_nonfungible/SetNonFungibleTokenStatus_04.png)  
 
 
 #### Usage
@@ -386,7 +386,7 @@ This MakeMxwEvents create maxonrow events, by accepting :
 #### 5.
 This tutorial describes how to create maxonrow events for scanner base on approve transfer token-ownership after emitted by a network.
 
-![Image-5](pic/SetNonFungibleTokenStatus_05.png)  
+![Image-5](pic_nonfungible/SetNonFungibleTokenStatus_05.png)  
 
 
 #### Usage
@@ -406,7 +406,7 @@ This MakeMxwEvents create maxonrow events, by accepting :
 #### 6.
 This tutorial describes how to create maxonrow events for scanner base on reject transfer token-ownership after emitted by a network.
 
-![Image-6](pic/SetNonFungibleTokenStatus_06.png)  
+![Image-6](pic_nonfungible/SetNonFungibleTokenStatus_06.png)  
 
 
 #### Usage
@@ -459,13 +459,13 @@ The role of the handler is to define what action(s) needs to be taken when this 
 
 In the file (./x/token/nonfungible/handler.go) start with the following code:
 
-![Image-1](pic/MintNonFungibleItem_01.png)
+![Image-1](pic_nonfungible/MintNonFungibleItem_01.png)
 
 
 NewHandler is essentially a sub-router that directs messages coming into this module to the proper handler.
 Now, you need to define the actual logic for handling the MsgTypeTransferNonFungibleItem message in handleMsgTransferNonFungibleItem:
 
-![Image-2](pic/TransferNonFungibleItem_02.png)
+![Image-2](pic_nonfungible/TransferNonFungibleItem_02.png)
 
 
 In this function, requirements need to be met before emitted by the network.  
@@ -480,7 +480,7 @@ In this function, requirements need to be met before emitted by the network.
 #### Events
 This tutorial describes how to create maxonrow events for scanner on this after emitted by a network.
 
-![Image-1](pic/TransferNonFungibleItem_03.png)  
+![Image-1](pic_nonfungible/TransferNonFungibleItem_03.png)  
 
 
 #### Usage
@@ -539,13 +539,13 @@ The role of the handler is to define what action(s) needs to be taken when this 
 
 In the file (./x/token/nonfungible/handler.go) start with the following code:
 
-![Image-1](pic/MintNonFungibleItem_01.png)
+![Image-1](pic_nonfungible/MintNonFungibleItem_01.png)
 
 
 NewHandler is essentially a sub-router that directs messages coming into this module to the proper handler.
 Now, you need to define the actual logic for handling the MsgTypeMintNonFungibleItem message in handleMsgMintNonFungibleItem:
 
-![Image-2](pic/MintNonFungibleItem_02.png)
+![Image-2](pic_nonfungible/MintNonFungibleItem_02.png)
 
 
 In this function, requirements need to be met before emitted by the network.  
@@ -561,7 +561,7 @@ In this function, requirements need to be met before emitted by the network.
 #### Events
 This tutorial describes how to create maxonrow events for scanner on this after emitted by a network.
 
-![Image-3](pic/MintNonFungibleItem_03.png)  
+![Image-3](pic_nonfungible/MintNonFungibleItem_03.png)  
 
 
 #### Usage
@@ -616,13 +616,13 @@ The role of the handler is to define what action(s) needs to be taken when this 
 
 In the file (./x/token/nonfungible/handler.go) start with the following code:
 
-![Image-1](pic/MintNonFungibleItem_01.png)
+![Image-1](pic_nonfungible/MintNonFungibleItem_01.png)
 
 
 NewHandler is essentially a sub-router that directs messages coming into this module to the proper handler.
 Now, you need to define the actual logic for handling the MsgTypeBurnNonFungibleItem message in handleMsgBurnNonFungibleItem:
 
-![Image-2](pic/BurnNonFungibleItem_02.png)
+![Image-2](pic_nonfungible/BurnNonFungibleItem_02.png)
 
 
 In this function, requirements need to be met before emitted by the network.  
@@ -637,7 +637,7 @@ In this function, requirements need to be met before emitted by the network.
 #### Events
 This tutorial describes how to create maxonrow events for scanner on this after emitted by a network.
 
-![Image-1](pic/BurnNonFungibleItem_03.png)  
+![Image-1](pic_nonfungible/BurnNonFungibleItem_03.png)  
 
 
 #### Usage
@@ -687,13 +687,13 @@ The role of the handler is to define what action(s) needs to be taken when this 
 
 In the file (./x/token/nonfungible/handler.go) start with the following code:
 
-![Image-1](pic/MintNonFungibleItem_01.png)
+![Image-1](pic_nonfungible/MintNonFungibleItem_01.png)
 
 
 NewHandler is essentially a sub-router that directs messages coming into this module to the proper handler.
 Now, you need to define the actual logic for handling the MsgTypeTransferNonFungibleTokenOwnership message in handleMsgTransferNonFungibleTokenOwnership:
 
-![Image-2](pic/TransferNonFungibleTokenOwnership_02.png)
+![Image-2](pic_nonfungible/TransferNonFungibleTokenOwnership_02.png)
 
 
 In this function, requirements need to be met before emitted by the network.  
@@ -707,7 +707,7 @@ In this function, requirements need to be met before emitted by the network.
 #### Events
 This tutorial describes how to create maxonrow events for scanner on this after emitted by a network.
 
-![Image-1](pic/TransferNonFungibleTokenOwnership_03.png)  
+![Image-1](pic_nonfungible/TransferNonFungibleTokenOwnership_03.png)  
 
 
 #### Usage
@@ -756,13 +756,13 @@ The role of the handler is to define what action(s) needs to be taken when this 
 
 In the file (./x/token/nonfungible/handler.go) start with the following code:
 
-![Image-1](pic/MintNonFungibleItem_01.png)
+![Image-1](pic_nonfungible/MintNonFungibleItem_01.png)
 
 
 NewHandler is essentially a sub-router that directs messages coming into this module to the proper handler.
 Now, you need to define the actual logic for handling the MsgTypeAcceptNonFungibleTokenOwnership message in handleMsgTypeAcceptNonFungibleTokenOwnership:
 
-![Image-2](pic/AcceptNonFungibleTokenOwnership_01.png)
+![Image-2](pic_nonfungible/AcceptNonFungibleTokenOwnership_01.png)
 
 
 In this function, requirements need to be met before emitted by the network.  
@@ -777,7 +777,7 @@ In this function, requirements need to be met before emitted by the network.
 #### Events
 This tutorial describes how to create maxonrow events for scanner on this after emitted by a network.
 
-![Image-1](pic/AcceptNonFungibleTokenOwnership_03.png)  
+![Image-1](pic_nonfungible/AcceptNonFungibleTokenOwnership_03.png)  
 
 
 #### Usage
@@ -867,13 +867,13 @@ The role of the handler is to define what action(s) needs to be taken when this 
 
 In the file (./x/token/nonfungible/handler.go) start with the following code:
 
-![Image-1](pic/MintNonFungibleItem_01.png)
+![Image-1](pic_nonfungible/MintNonFungibleItem_01.png)
 
 
 NewHandler is essentially a sub-router that directs messages coming into this module to the proper handler.
 Now, you define the actual logic for handling the MsgTypeSetNonFungibleItemStatus-FreezeNonFungibleItem message in handleMsgSetNonFungibleItemStatus:
 
-![Image-2](pic/SetNonFungibleItemStatus_03.png)
+![Image-2](pic_nonfungible/SetNonFungibleItemStatus_03.png)
 
 
 In this function, requirements need to be met before emitted by the network.  
@@ -885,7 +885,7 @@ In this function, requirements need to be met before emitted by the network.
 
 Next, you define the actual logic for handling the MsgTypeSetNonFungibleItemStatus-UnfreezeNonFungibleItem message in handleMsgSetNonFungibleItemStatus:
 
-![Image-2](pic/SetNonFungibleItemStatus_04.png)
+![Image-2](pic_nonfungible/SetNonFungibleItemStatus_04.png)
 
 
 In this function, requirements need to be met before emitted by the network.  
@@ -901,7 +901,7 @@ In this function, requirements need to be met before emitted by the network.
 #### 1.
 This tutorial describes how to create maxonrow events for scanner base on freeze-item after emitted by a network.
 
-![Image-1](pic/SetNonFungibleItemStatus_01.png)  
+![Image-1](pic_nonfungible/SetNonFungibleItemStatus_01.png)  
 
 
 #### Usage
@@ -921,7 +921,7 @@ This MakeMxwEvents create maxonrow events, by accepting :
 #### 2.
 This tutorial describes how to create maxonrow events for scanner base on unfreeze-item after emitted by a network.
 
-![Image-2](pic/SetNonFungibleItemStatus_02.png)  
+![Image-2](pic_nonfungible/SetNonFungibleItemStatus_02.png)  
 
 
 #### Usage
@@ -972,13 +972,13 @@ The role of the handler is to define what action(s) needs to be taken when this 
 
 In the file (./x/token/nonfungible/handler.go) start with the following code:
 
-![Image-1](pic/MintNonFungibleItem_01.png)
+![Image-1](pic_nonfungible/MintNonFungibleItem_01.png)
 
 
 NewHandler is essentially a sub-router that directs messages coming into this module to the proper handler.
 Now, you need to define the actual logic for handling the MsgTypeEndorsement message in handleMsgEndorsement:
 
-![Image-2](pic/Endorsement_02.png)
+![Image-2](pic_nonfungible/Endorsement_02.png)
 
 
 In this function, requirements need to be met before emitted by the network.  
@@ -991,7 +991,7 @@ In this function, requirements need to be met before emitted by the network.
 #### Events
 This tutorial describes how to create maxonrow events for scanner on this after emitted by a network.
 
-![Image-1](pic/Endorsement_03.png)  
+![Image-1](pic_nonfungible/Endorsement_03.png)  
 
 
 #### Usage
@@ -1042,13 +1042,13 @@ The role of the handler is to define what action(s) needs to be taken when this 
 
 In the file (./x/token/nonfungible/handler.go) start with the following code:
 
-![Image-1](pic/MintNonFungibleItem_01.png)
+![Image-1](pic_nonfungible/MintNonFungibleItem_01.png)
 
 
 NewHandler is essentially a sub-router that directs messages coming into this module to the proper handler.
 Now, you need to define the actual logic for handling the MsgTypeUpdateItemMetadata message in handleMsgUpdateItemMetadata:
 
-![Image-2](pic/UpdateItemMetadata_02.png)
+![Image-2](pic_nonfungible/UpdateItemMetadata_02.png)
 
 
 In this function, requirements need to be met before emitted by the network.  
@@ -1065,7 +1065,7 @@ In this function, requirements need to be met before emitted by the network.
 #### Events
 This tutorial describes how to create maxonrow events for scanner on this after emitted by a network.
 
-![Image-1](pic/UpdateItemMetadata_03.png)  
+![Image-1](pic_nonfungible/UpdateItemMetadata_03.png)  
 
 
 #### Usage
@@ -1113,13 +1113,13 @@ The role of the handler is to define what action(s) needs to be taken when this 
 
 In the file (./x/token/nonfungible/handler.go) start with the following code:
 
-![Image-1](pic/MintNonFungibleItem_01.png)
+![Image-1](pic_nonfungible/MintNonFungibleItem_01.png)
 
 
 NewHandler is essentially a sub-router that directs messages coming into this module to the proper handler.
 Now, you need to define the actual logic for handling the MsgTypeUpdateNFTMetadata message in handleMsgUpdateNFTMetadata:
 
-![Image-2](pic/UpdateNFTMetadata_02.png)
+![Image-2](pic_nonfungible/UpdateNFTMetadata_02.png)
 
 
 In this function, requirements need to be met before emitted by the network.  
@@ -1133,7 +1133,7 @@ In this function, requirements need to be met before emitted by the network.
 #### Events
 This tutorial describes how to create maxonrow events for scanner on this after emitted by a network.
 
-![Image-1](pic/UpdateNFTMetadata_03.png)  
+![Image-1](pic_nonfungible/UpdateNFTMetadata_03.png)  
 
 
 #### Usage
@@ -1157,7 +1157,7 @@ This is the place to define which queries against application state users will b
  
 Here, you will see NewQuerier been defined, and it acts as a sub-router for queries to this module (similar the NewHandler function). Note that because there isn't an interface similar to Msg for queries, we need to manually define switch statement cases (they can't be pulled off of the query .Route() function):
 
-![Image-1](pic/QuerierNonFungibleItem.png)
+![Image-1](pic_nonfungible/QuerierNonFungibleItem.png)
 
 
 This module will expose few queries:
@@ -1168,7 +1168,7 @@ This query the item data by given of symbol and item ID.
 
 After the router is defined, define the inputs and responses for this queryItemData:
 
-![Image-2](pic/queryItemData.png)
+![Image-2](pic_nonfungible/queryItemData.png)
 
 
 Notes on the above code:
@@ -1237,7 +1237,7 @@ This query the token data by a given symbol.
 
 After the router is defined, define the inputs and responses for this queryTokenData:
 
-![Image-2](pic/queryTokenData.png)
+![Image-2](pic_nonfungible/queryTokenData.png)
 
 
 Notes on the above code:
@@ -1308,7 +1308,7 @@ This query the item data by given of symbol and item ID.
 
 After the router is defined, define the inputs and responses for this queryItemData:
 
-![Image-2](pic/queryItemData.png)
+![Image-2](pic_nonfungible/queryItemData.png)
 
 
 Notes on the above code:

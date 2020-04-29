@@ -17,7 +17,7 @@ const ListItem = styled(({ className, active, level, ...props }) => {
   list-style: none;
 
   a {
-    color: #5C6975;
+    color: #000056;
     text-decoration: none;
     font-weight: ${({ level }) => (level === 0 ? 700 : 400)};
     padding: 0.45rem 0 0.45rem ${props => 2 + (props.level || 0) * 1}rem;
@@ -25,14 +25,14 @@ const ListItem = styled(({ className, active, level, ...props }) => {
     position: relative;
 
     &:hover {
-      color: rgb(116, 76, 188) !important;
+      color: rgb(0, 0, 86) !important;
     }
 
     ${props =>
       props.active &&
       `
-      color: #663399;
-      border-color: rgb(230,236,241) !important;
+      color: #000056;
+      border-color: rgb(0, 0, 86) !important;
       border-style: solid none solid solid;
       border-width: 1px 0px 1px 1px;
       background-color: #fff;
@@ -46,7 +46,7 @@ const ListItem = styled(({ className, active, level, ...props }) => {
 
 const Sidebar = styled('aside')`
   width: 100%;
-  /* background-color: rgb(245, 247, 249); */
+  /* background-color: rgb(0, 0, 86); */
   /* border-right: 1px solid #ede7f3; */
   height: 100vh;
   overflow: auto;
@@ -57,18 +57,18 @@ const Sidebar = styled('aside')`
   position: sticky;
   top: 0;
   padding-right: 0;
-  background-color: #372476;
+  background-color: #000056;
   /* Safari 4-5, Chrome 1-9 */
-  background: linear-gradient(#372476, #3b173b);
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#372476), to(#3b173b));
+  background: linear-gradient(#000056, #000056);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000056), to(#000056));
   /* Safari 5.1, Chrome 10+ */
-  background: -webkit-linear-gradient(top, #372476, #3b173b);
+  background: -webkit-linear-gradient(top, #000056, #000056);
   /* Firefox 3.6+ */
-  background: -moz-linear-gradient(top, #372476, #3b173b);
+  background: -moz-linear-gradient(top, #000056, #000056);
   /* IE 10 */
-  background: -ms-linear-gradient(top, #372476, #3b173b);
+  background: -ms-linear-gradient(top, #000056, #000056);
   /* Opera 11.10+ */
-  background: -o-linear-gradient(top, #372476, #3b173b);
+  background: -o-linear-gradient(top, #000056, #000056);
 
   @media only screen and (max-width: 1023px) {
     width: 100%;
@@ -81,8 +81,8 @@ const Sidebar = styled('aside')`
   }
   @media only screen and (max-width: 767px) {
     padding-left: 0px;
-    background-color: #372476;
-    background: #372476;
+    background-color: #000056;
+    background: #000056;
     height: auto;
   }
 `;
