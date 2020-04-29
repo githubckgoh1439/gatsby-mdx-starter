@@ -1,0 +1,55 @@
+---
+gitRepo: "githubckgoh1439/gatsby-mdx-starter"
+srcPath: "src"
+categories:
+  docs:
+    basePath: "/docs"
+    title: "Docs"
+    link: "/introduction"
+    priority: 9999
+    sidebar:
+      Introduction:
+        url: "/introduction"
+        links:
+          - "/introduction/overview"
+          - "/introduction/installation"
+          - "/introduction/quickstart"
+        locales:
+          zh: "Forge111 入门"
+      Modules:
+        url: "/modules"
+        links:
+          - "/modules/kyc"
+          - "/modules/fungible"
+          - "/modules/nonfungible"
+        locales:
+          zh: "Forge123 入门"
+      Interfaces:
+        url: "/interfaces"
+        links:
+          - "/interfaces/nodecli"
+          - "/interfaces/noderpc"
+        locales:
+          zh: "Forge124 入门"
+      Toolkits:
+        url: "/toolkits"
+        links:
+          - "/toolkits/sdk"
+          - "/toolkits/explorer"
+          - "/toolkits/faucet"
+        locales:
+          zh: "Forge125 入门"
+      FAQ:
+        url: "/"
+        links:
+          - "/faq"
+        locales:
+          zh: "Forge126 入门"
+      Community channels:
+        url: "/"
+        links:
+          - "/communitychannels"
+        locales:
+          zh: "Forge127 入门"  
+          
+          

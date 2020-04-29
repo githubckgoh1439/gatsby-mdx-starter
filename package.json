@@ -1,0 +1,61 @@
+{
+  "dependencies": {
+    "@arcblock/gatsby-theme-docs": "^7.11.2",
+    "dotenv": "^8.0.0",
+    "gatsby": "2.20.3",
+    "prettier": "^1.13.7",
+    "remark-cli": "^5.0.0",
+    "remark-lint-no-dead-urls": "^0.3.0",
+    "remark-lint-write-good": "^1.0.3",
+    "remark-preset-lint-recommended": "^3.0.2",
+    "textlint": "^10.2.1",
+    "textlint-rule-stop-words": "^1.0.3"
+  },
+  "scripts": {
+    "lint:json": "prettier \"**/*.json\" --write",
+    "lint:md": "prettier \"**/*.md\" --write && remark . && textlint \"md/**\"",
+    "lint": "yarn lint:json && yarn lint:md",
+    "start": "gatsby develop",
+    "build": "NODE_ENV=production GATSBY_APP_DOMAIN=docs.arcblock.io gatsby build",
+    "serve": "gatsby serve",
+    "commit": "standard-commit",
+    "release": "standard-version"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "name": "mxw-docs",
+  "description": "Maxonrow Documentation",
+  "version": "2.0.0",
+  "main": "README.md",
+  "devDependencies": {
+    "@commitlint/cli": "^7.1.2",
+    "@commitlint/config-conventional": "^7.1.2",
+    "standard-commit": "^0.6.0",
+    "standard-version": "^4.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcblock/forge-docs.git"
+  },
+  "keywords": [
+    "arcblock",
+    "blockchain",
+    "middleware"
+  ],
+  "author": "ArcBlock",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arcblock/forge-docs/issues"
+  },
+  "homepage": "https://arcblock.io/docs/",
+  "remarkConfig": {
+    "plugins": [
+      "remark-lint-no-dead-urls",
+      "remark-lint-write-good",
+      "remark-preset-lint-recommended"
+    ]
+  }
+}
